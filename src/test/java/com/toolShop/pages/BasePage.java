@@ -5,7 +5,10 @@ import com.microsoft.playwright.Page;
 
 public abstract class BasePage {
     protected final Page page;
+
     protected final Locator signIn;
+
+
 
     public BasePage(Page page){
         this.page = page;
