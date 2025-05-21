@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import static com.toolShop.stepDefs.Hooks.page;
 import static org.junit.Assert.assertEquals;
 
-public class RegisterPage extends BasePage{
+public class RegisterPage extends BasePage {
 
     private final Locator firstNameInput;
     private final Locator lastNameInput;
@@ -26,64 +26,61 @@ public class RegisterPage extends BasePage{
     private final Locator registerButton;
 
 
-    public RegisterPage(Page page){
+    public RegisterPage(Page page) {
         super(page);
-        this.firstNameInput   = page.locator("#first_name");
-        this.lastNameInput    = page.locator("#last_name");
-        this.dobInput         = page.locator("input[placeholder='Your Date of birth *']");
-        this.streetInput      = page.locator("#street");
-        this.postalCodeInput  = page.locator("#postal_code");
-        this.cityInput        = page.locator("#city");
-        this.stateInput       = page.locator("[data-test='state']");
-        this.countrySelect    = page.locator("[data-test='country']");
-        this.phoneInput       = page.locator("#phone");
-        this.emailInput       = page.locator("#email");
-        this.passwordInput    = page.locator("#password");
-        this.registerButton   = page.locator("[data-test='register-submit']");
+        this.firstNameInput = page.locator("#first_name");
+        this.lastNameInput = page.locator("#last_name");
+        this.dobInput = page.locator("input[placeholder='Your Date of birth *']");
+        this.streetInput = page.locator("#street");
+        this.postalCodeInput = page.locator("#postal_code");
+        this.cityInput = page.locator("#city");
+        this.stateInput = page.locator("[data-test='state']");
+        this.countrySelect = page.locator("[data-test='country']");
+        this.phoneInput = page.locator("#phone");
+        this.emailInput = page.locator("#email");
+        this.passwordInput = page.locator("#password");
+        this.registerButton = page.locator("[data-test='register-submit']");
     }
 
     public void fillRegistrationForm(String firstName, String lastName, String dob, String street,
-                                     String postalCode, String city, String state,String country, String phone,
+                                     String postalCode, String city, String state, String country, String phone,
                                      String email, String password) {
 
-     //   firstNameInput.click();
+        firstNameInput.waitFor(); // waits for it to be attached & visible
         firstNameInput.fill(firstName);
-      //  lastNameInput.click();
+        lastNameInput.waitFor();
         lastNameInput.fill(lastName);
-        page.waitForTimeout(1000);
-
+        dobInput.waitFor();
         dobInput.fill(dob);
-        page.waitForTimeout(2000);
+        streetInput.waitFor();
         streetInput.fill(street);
-        page.waitForTimeout(2000);
+        postalCodeInput.waitFor();
         postalCodeInput.fill(postalCode);
-        page.waitForTimeout(2000);
+        cityInput.waitFor();
         cityInput.fill(city);
-        page.waitForTimeout(2000);
+        stateInput.waitFor();
         stateInput.fill(state);
-        page.waitForTimeout(1000);
+        countrySelect.waitFor();
         countrySelect.selectOption(country);
-        page.waitForTimeout(1000);// Assumes <select> element
+        phoneInput.waitFor();
         phoneInput.fill(phone);
-        page.waitForTimeout(1000);
+        emailInput.waitFor();
         emailInput.fill(email);
-        page.waitForTimeout(1000);
+        passwordInput.waitFor();
         passwordInput.fill(password);
-        page.waitForTimeout(2000);
+        registerButton.waitFor();
 
 
     }
-    public void clickRegisterBtn(){
+
+    public void clickRegisterBtn() {
         registerButton.click();
         page.waitForTimeout(2000);
     }
-//    public Locator errorMsgLocator(String text) {
-//        return page.locator("xpath=//*[text()='" + text + "']");
-//      //  return page.locator("//*[text()=' + text + ']");
-//    }
 
-
-
+    public void enterPassword(String password) {
+        passwordInput.fill(password);
+    }
 
 
 }

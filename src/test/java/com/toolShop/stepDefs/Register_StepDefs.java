@@ -43,10 +43,18 @@ public class Register_StepDefs extends BasePage_stepDefs {
 
     @Then("The registration should fail with appropriate validation {string}")
     public void theRegistrationShouldFailWithAppropriateValidation(String expectedErrorMsg) {
-
-      //  registerPage.assertErrorMessage(expectedErrorMsg);
         BrowserUtils.assertErrorMessage(expectedErrorMsg);
     }
 
 
+    @When("The user re-enters the existing information as {string},{string},{string},{string},{string},{string},{string}, {string},{string},{string} and {string}")
+    public void theUserReEntersTheExistingInformationAsAnd(String firstName, String lastName, String dob, String street, String postalCode, String city, String state, String country, String phone, String email, String password) {
+        registerPage.fillRegistrationForm(firstName, lastName, dob, street, postalCode, city, state, country, phone, email, password);
+
+    }
+
+    @When("The user enters invalid password {string}")
+    public void theUserEntersInvalidPassword(String password) {
+        registerPage.enterPassword(password);
+    }
 }
