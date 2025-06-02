@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         glue = "com/toolShop/stepDefs",                   // path to step definitions
         dryRun = false,                                   // true = check steps only
         monochrome = true,                                // better console formatting
-        tags = "@login"                              // filter scenarios by tag (optional)
+        tags = "@cart and @validation"                              // filter scenarios by tag (optional)
 )
 public class CukesRunner {
 }

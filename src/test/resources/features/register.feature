@@ -1,10 +1,11 @@
+
 Feature: User Registration
   As a user i should be able to register on the web site
 
   Background:
     Given the user is on the registration page
 
-  @regression
+  @positive @register
   Scenario Outline: Successful registration with valid details
 
     When The user enters valid input "<First name>","<Last name>","<dob>","<Street>","<Postal code>","<City>","<State>", "<Country>","<Phone>","<Email address>" and "<Password>"
@@ -12,10 +13,10 @@ Feature: User Registration
     Then The user should be navigated to Login page
     Examples:
 
-      | First name | Last name | dob        | Street         | Postal code | City   | State  | Country | Phone     | Email address    | Password   |
+      | First name | Last name | dob        | Street         | Postal code | City   | State  | Country | Phone     | Email address   | Password   |
       | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | proya@gmail.com | WVhft76@99 |
 
-  @register
+  @negative @requiredFields
   Scenario Outline: Registration fails when mandatory fields are missing or invalid
     When The user enters invalid input "<First name>","<Last name>","<dob>","<Street>","<Postal code>","<City>","<State>", "<Country>","<Phone>","<Email address>" and "<Password>"
     And clicks on Register button
@@ -34,15 +35,16 @@ Feature: User Registration
       | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 |                 | WVhft76@99 | Email is required         |
       | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | piiya@gmail.com |            | Password is required      |
 
-
+  @negative @emailValidation
   Scenario Outline: User can receive an error message when registering with an existing email.
     When The user re-enters the existing information as "<First name>","<Last name>","<dob>","<Street>","<Postal code>","<City>","<State>", "<Country>","<Phone>","<Email address>" and "<Password>"
     And clicks on Register button
     Then The registration should fail with appropriate validation "<ErrorMsg>"
     Examples:
       | First name | Last name | dob        | Street         | Postal code | City   | State  | Country | Phone     | Email address    | Password   | ErrorMsg                                           |
-      | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | prriya@gmail.com | WVhft76@99 | A customer with this email address already exists. |
-  @wip
+      | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | proya@gmail.com | WVhft76@99 | A customer with this email address already exists. |
+
+  @negative @passwordValidation
   Scenario Outline: Registration fails when password is invalid
     When The user enters invalid password "<Password>"
     And clicks on Register button
