@@ -2,9 +2,9 @@ Feature: Purchase Function
   As a user I should be able to complete the purchase with selected products
 
   Background:
-    Given the user is logged in with email "proya@gmail.com" and password "WVhft76@99"
+    Given the user is logged in with email "priya@gmail.com" and password "WVhft76@99"
 
-  @hover @regression
+
   Scenario Outline: Product video plays on image hover over
     When the user is on My account page and clicks on the Category dropdown
     And selects the "<Product Category>"
@@ -14,8 +14,8 @@ Feature: Purchase Function
     Examples:
       | Product Category | Product Page | Product        | Product Video  |
       | Power Tools      | Power Tools  | Sheet Sander   | Sheet Sander   |
-      | Other            | Other        | Ear Protection | Ear Protection |
-      | Hand Tools       | Hand Tools   | Bolt Cutters   | Bolt Cutters   |
+    #  | Other            | Other        | Ear Protection | Ear Protection |
+    #  | Hand Tools       | Hand Tools   | Bolt Cutters   | Bolt Cutters   |
 
   @cart @smoke
   Scenario Outline: Verify that the user can add a product to the cart

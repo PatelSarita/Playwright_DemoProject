@@ -12,7 +12,7 @@ Feature: Login Functionality
     Then The user should be able to login and redirected to My account page
     Examples:
       | email           | password   |
-      | proya@gmail.com | WVhft76@99 |
+      | priya@gmail.com | WVhft76@99 |
 
   @positive
   Scenario Outline: Positive login test with password as bullet signs

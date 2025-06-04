@@ -5,7 +5,7 @@ Feature: User Registration
   Background:
     Given the user is on the registration page
 
-  @positive @register
+   @register
   Scenario Outline: Successful registration with valid details
 
     When The user enters valid input "<First name>","<Last name>","<dob>","<Street>","<Postal code>","<City>","<State>", "<Country>","<Phone>","<Email address>" and "<Password>"
@@ -14,7 +14,7 @@ Feature: User Registration
     Examples:
 
       | First name | Last name | dob        | Street         | Postal code | City   | State  | Country | Phone     | Email address   | Password   |
-      | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | proya@gmail.com | WVhft76@99 |
+      | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | priya@gmail.com | WVhft76@99 |
 
   @negative @requiredFields
   Scenario Outline: Registration fails when mandatory fields are missing or invalid

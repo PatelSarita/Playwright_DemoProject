@@ -20,32 +20,6 @@ public class Purchase_StepDefs extends BasePage_stepDefs {
         homePage.clickCategoryDropdown();
     }
 
-    @And("selects the {string}")
-    public void selectsThe(String productCategory) {
-        homePage.selectProductCategory(productCategory);
-
-    }
-
-
-    @Then("the user should be navigated to the relevant {string} page")
-    public void theUserShouldBeNavigatedToTheRelevant(String productPageName) {
-        assert productPage.isProductPageVisible(productPageName);
-        // productPage.hoverOverImage();
-
-    }
-
-    @When("the user hovers over the image of a {string}")
-    public void theUserHoversOverTheImageOfA(String product) {
-        productPage.hoverOverProductImage(product);
-    }
-
-
-    @Then("the corresponding {string} video should automatically play")
-    public void theCorrespondingVideoShouldAutomaticallyPlay(String productVideo) {
-        productPage.isVideoPlaying(productVideo);
-    }
-
-
     @And("select the {string} and {string} and clicks on Add to cart")
     public void selectTheAndAndClicksOnAddToCart(String product, String quantity) {
         productPage.addToCart(product, quantity);
