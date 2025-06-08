@@ -42,7 +42,7 @@ public class Login_StepDefs extends BasePage_stepDefs{
 
     @Then("The user should get the appropriate {string}")
     public void theUserShouldGetTheAppropriate(String expectedErrorMsg) {
-        BrowserUtils.assertErrorMessage(expectedErrorMsg);
+        BrowserUtils.assertMessage(expectedErrorMsg);
     }
 
 

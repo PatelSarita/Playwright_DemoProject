@@ -42,7 +42,7 @@ Feature: User Registration
     Then The registration should fail with appropriate validation "<ErrorMsg>"
     Examples:
       | First name | Last name | dob        | Street         | Postal code | City   | State  | Country | Phone     | Email address    | Password   | ErrorMsg                                           |
-      | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | proya@gmail.com | WVhft76@99 | A customer with this email address already exists. |
+      | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | priya@gmail.com| WVhft76@99 | A customer with this email address already exists. |
 
   @negative @passwordValidation
   Scenario Outline: Registration fails when password is invalid

@@ -22,15 +22,17 @@ Feature: Login Functionality
       | email           | password   |
       | proya@gmail.com | WVhft76@99 |
 
-  @negative
+  @login @negative
   Scenario Outline: Negative login test
     When The user enters invalid "<email>" or "<password>"
     And clicks on Login button
     Then The user should get the appropriate "<errorMsg>"
     Examples:
-      | email           | password   | errorMsg                  |
-      | proya@gmail.com |            | Password is required      |
-      |                 | WVhft76@99 | Email is required         |
-      | proya@gmail.co  | WVhft76@99 | Invalid email or password |
-      | proya@gmail.com | WVhft76@9  | Invalid email or password |
+      | email            | password   | errorMsg                  |
+      | proya@gmail.com  |            | Password is required      |
+      |                  | WVhft76@99 | Email is required         |
+      | proya@gmail.co   | WVhft76@99 | Invalid email or password |
+      | proya@gmail.com  | WVhft76@9  | Invalid email or password |
+
+
 
