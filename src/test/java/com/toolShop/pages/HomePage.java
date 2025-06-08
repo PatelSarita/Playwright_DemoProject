@@ -13,7 +13,7 @@ public class HomePage extends BasePage {
     public HomePage(Page page) {
         super(page);
         this.categoryDropdown = page.locator("[data-test='nav-categories']");
-this.cartIcon = page.locator("[data-test='nav-cart']");
+        this.cartIcon = page.locator("[data-test='nav-cart']");
     }
 
     public void clickCategoryDropdown() {
@@ -28,10 +28,11 @@ this.cartIcon = page.locator("[data-test='nav-cart']");
         page.locator(selector).click();
         page.waitForTimeout(2000);
     }
-public void clickCartIcon(){
+
+    public void clickCartIcon() {
         cartIcon.waitFor();
         cartIcon.click();
         page.waitForTimeout(2000);
-}
+    }
 
 }

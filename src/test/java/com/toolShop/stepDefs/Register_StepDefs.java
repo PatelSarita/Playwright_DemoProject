@@ -43,7 +43,7 @@ public class Register_StepDefs extends BasePage_stepDefs {
 
     @Then("The registration should fail with appropriate validation {string}")
     public void theRegistrationShouldFailWithAppropriateValidation(String expectedErrorMsg) {
-        BrowserUtils.assertErrorMessage(expectedErrorMsg);
+        BrowserUtils.assertMessage(expectedErrorMsg);
     }
 
 
