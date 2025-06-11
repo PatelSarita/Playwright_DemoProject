@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         glue = "com/toolShop/stepDefs",
         dryRun = false,
         monochrome = true,
-        tags = "@e2e and @purchase and @regression"
+        tags = "@register"
 )
 public class CukesRunner {
 }

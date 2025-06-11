@@ -31,10 +31,10 @@ Feature: Product Navigation
     Then the user should see the product detail page for "<Product>"
 
     Examples:
-      | Category Page | Product      |
-     | Power Tools   | Sheet Sander |
-      | Hand Tools    | Bolt Cutters |
-      | Other    | Cross-head screws |
+      | Category Page | Product            |
+      | Power Tools   | Cordless Drill 12V |
+      | Hand Tools    | Square Ruler       |
+      | Other         | Tool Cabinet       |
 
 
   @negative @emptyProduct

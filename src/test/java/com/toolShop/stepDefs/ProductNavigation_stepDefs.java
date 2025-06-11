@@ -41,8 +41,8 @@ public class ProductNavigation_stepDefs extends BasePage_stepDefs {
 
     @When("the user clicks on {string}")
     public void theUserClicksOn(String productName) {
-        //productPage.clickOnProduct(productName);
         productPage.clickProductByNameAcrossPages(productName);
+
     }
 
     @Then("the user should see the product detail page for {string}")

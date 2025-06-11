@@ -8,6 +8,7 @@ import io.cucumber.datatable.DataTable;
 
 import java.util.List;
 import java.util.Map;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.core.StringContains.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -54,7 +55,8 @@ public class CartPage extends BasePage {
         assertEquals(expectedTotalPrice, actualTotal);
 
     }
-    public void assertCartProductDataTable(DataTable table){
+
+    public void assertCartProductDataTable(DataTable table) {
         List<Map<String, String>> expectedProducts = table.asMaps(String.class, String.class);
 
         for (Map<String, String> expected : expectedProducts) {
@@ -63,21 +65,16 @@ public class CartPage extends BasePage {
             String price = expected.get("Product Price");
             String total = expected.get("Total Price");
 
-            // Locate the row by product name
             Locator productRow = page.locator("tr:has(span[data-test='product-title']:has-text('" + productName + "'))");
             productRow.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
-           // String actualProduct = productRow.textContent().trim();
-            // Assert Product Name
+
             PlaywrightAssertions.assertThat(productRow.locator("span[data-test='product-title']")).hasText(productName);
 
-            // Assert Quantity (read from the input field's value attribute)
             String quantityValue = productRow.locator("input[data-test='product-quantity']").inputValue();
             assertEquals(quantity, quantityValue);
 
-            // Assert Price
             PlaywrightAssertions.assertThat(productRow.locator("span[data-test='product-price']")).hasText(price);
 
-            // Assert Total
             PlaywrightAssertions.assertThat(productRow.locator("span[data-test='line-price']")).hasText(total);
         }
     }
@@ -120,7 +117,7 @@ public class CartPage extends BasePage {
         paymentDropdown.selectOption(paymentType);
         page.waitForTimeout(1000);
         switch (paymentType) {
-            case "Bank Name":
+            case "Bank Transfer":
                 page.fill("input[placeholder='Bank Name']", "Deutsch Bank");
                 page.fill("input[placeholder='Account Name']", "Priya Test");
                 page.fill("input[placeholder='Account Number']", "123456789101");
@@ -158,5 +155,20 @@ public class CartPage extends BasePage {
 
     public void clickConfirmBtn() {
         confirmBtn.click();
+    }
+
+    public void updateProductQuantityInTheCart(String product, String qtyInput) {
+        Locator row = page.locator("tr:has(span[data-test='product-title']:has-text('" + product + "'))");
+        Locator cartQuatity = row.locator("input[data-test='product-quantity']");
+        cartQuatity.fill(qtyInput);
+
+        Locator field = page.locator("//div[@class='wizard-steps horizontal']");
+        field.click();
+    }
+
+    public void removeProductFromTheCart() {
+        Locator deleteBtn = page.locator("[data-icon='xmark']");
+        deleteBtn.waitFor();
+        deleteBtn.click();
     }
 }
