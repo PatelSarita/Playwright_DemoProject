@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         glue = "com/toolShop/stepDefs",
         dryRun = false,
         monochrome = true,
-        tags = "@register"
+        tags = "@logOut"
 )
 public class CukesRunner {
 }

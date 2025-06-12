@@ -86,9 +86,6 @@ public class ProductPage extends BasePage {
 
 
     public void addToCart(String productName, String quantity) {
-//        String xpath = String.format("//h5[normalize-space(text())='%s']/ancestor::a//img", productName);
-//        Locator product = page.locator(xpath);
-//        product.click();
         clickProductByNameAcrossPages(productName);
         quantityInput.fill(String.valueOf(quantity));
         addToCartBtn.click();
