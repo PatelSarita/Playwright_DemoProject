@@ -1,3 +1,4 @@
+@regression
 Feature: Cart Page Functionality
   As a user I want to manage my shopping cart
   So that I can review, modify or remove items before purchase
@@ -5,54 +6,55 @@ Feature: Cart Page Functionality
   @cart @smoke
   Scenario Outline: Verify that the user can add a product to the cart
     When the user is on My account page and clicks on the Category dropdown
-    And selects the "<Product Category>"
-    Then the user should be navigated to the relevant "<Product Page>" page
+    And selects the "<product category>"
+    Then the user should be navigated to the relevant "<product page>" page
     And select the "<product>" and "<quantity>" and clicks on Add to cart
     Then The Product added to your shopping cart message "<productAddedMessage>" should be displayed
     Examples:
-      | Product Category | Product Page | product      | quantity | productAddedMessage             |
+      | product category | product page | product      | quantity | productAddedMessage             |
       | Hand Tools       | Hand Tools   | Bolt Cutters | 2        | Product added to shopping cart. |
 
   @cart @validation
   Scenario Outline: Verify correct product and quantity in cart
     When the user is on My account page and clicks on the Category dropdown
-    And selects the "<Product Category>"
-    Then the user should be navigated to the relevant "<Product Page>" page
+    And selects the "<product category>"
+    Then the user should be navigated to the relevant "<product page>" page
     And select the "<product>" and "<quantity>" and clicks on Add to cart
     And the user clicks on cart icon
-    Then the cart should display the "<Product Name>" and "<Product Quantity>" and "<Product Price>" and correct "<Total Price>"
+    Then the cart should display the "<product>" and "<quantity>" and "<product price>" and correct "<total price>"
     Examples:
-      | Product Category | Product Page | product      | quantity | Product Name | Product Quantity | Product Price | Total Price |
-      | Hand Tools       | Hand Tools   | Bolt Cutters | 2        | Bolt Cutters | 2                | $48.41        | $96.82      |
+      | product category | product page | product      | quantity | product price | total price |
+      | Hand Tools       | Hand Tools   | Bolt Cutters | 2        | $48.41        | $96.82      |
 
 
 
-  Scenario Outline: Verify correct product and quantity in cart
-    Given the cart contains "<product>" with quantity "<quantity>"
-    Then the cart should display "<product>" with quantity "<quantity>" and correct total
+  @cart @increaseQuantity
+  Scenario Outline: Update quantity of a product in the cart
 
+    When the user is on My account page and clicks on the Category dropdown
+    And selects the "<product category>"
+    Then the user should be navigated to the relevant "<product page>" page
+    And select the "<product>" and "<quantity>" and clicks on Add to cart
+    And the user clicks on cart icon
+    Then the cart should display the "<product>" and "<quantity>" and "<product price>" and correct "<total price>"
+    When the user increases or decrease the quantity of "<product>" to "<new quantity>"
+    Then the success message "<message>" should be displayed with "<product>" and "<new quantity>" and "<new price>" and correct "<new total>"
     Examples:
-      | product            | quantity |
-      | Combination Pliers | 2        |
-      | Bolt Cutters       | 1        |
+      | product category | product page | product        | quantity | product price | total price | new quantity | message                   | new price | new total |
+      | Other            | Other        | Ear Protection | 1        | $18.58        | $18.58      | 3            | Product quantity updated. | $18.58    | $55.74    |
+      | Hand Tools       | Hand Tools   | Bolt Cutters   | 4        | $48.41        | $193.64     | 2            | Product quantity updated. | $48.41    | $96.82    |
 
-
-  Scenario Outline: Increase quantity of a product in the cart
-    Given the cart contains "<product>" with quantity "<initialQuantity>"
-    When the user increases the quantity of "<product>" to "<newQuantity>"
-    Then the quantity should be updated to "<newQuantity>" and total recalculated
-
-    Examples:
-      | product            | initialQuantity | newQuantity |
-      | Combination Pliers | 1               | 3           |
-      | Bolt Cutters       | 2               | 4           |
-
+  @cart @removeQuantity
   Scenario Outline: Remove an item from the cart
-    Given the cart contains "<product>"
-    When the user removes "<product>" from the cart
-    Then "<product>" should no longer be displayed in the cart
-
+    When the user is on My account page and clicks on the Category dropdown
+    And selects the "<product category>"
+    Then the user should be navigated to the relevant "<product page>" page
+    And select the "<product>" and "<quantity>" and clicks on Add to cart
+    And the user clicks on cart icon
+    Then the cart should display the "<product>" and "<quantity>" and "<product price>" and correct "<total price>"
+    When the user removes the product from the cart
+    Then the message "<message>" should be displayed
     Examples:
-      | product            |
-      | Combination Pliers |
-      | Bolt Cutters       |
+      | product category | product page | product        | quantity | product price | total price | message          |
+      | Other            | Other        | Ear Protection | 1        | $18.58        | $18.58      | Product deleted. |
+

@@ -2,13 +2,6 @@ package com.toolShop.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.WaitForSelectorState;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
-import static com.toolShop.stepDefs.Hooks.page;
-import static org.junit.Assert.assertEquals;
 
 public class RegisterPage extends BasePage {
 
