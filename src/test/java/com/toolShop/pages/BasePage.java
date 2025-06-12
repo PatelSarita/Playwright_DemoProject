@@ -8,6 +8,7 @@ public abstract class BasePage {
 
     protected final Locator signIn;
     private final Locator userNameDropdown;
+    private final Locator signOut;
 
 
 
@@ -15,6 +16,7 @@ public abstract class BasePage {
         this.page = page;
         this.signIn = page.locator("//a[text()='Sign in']");
         this.userNameDropdown = page.locator("#menu");
+        this.signOut = page.locator("a.dropdown-item[data-test='nav-sign-out']");
     }
     public void clickSignIn(){
         signIn.click();
@@ -24,7 +26,6 @@ public abstract class BasePage {
         userNameDropdown.click();
     }
     public void selectSignOutOption(){
-        Locator signOut = page.locator("a.dropdown-item[data-test='nav-sign-out']");
         signOut.click();
         page.waitForTimeout(2000);
     }
