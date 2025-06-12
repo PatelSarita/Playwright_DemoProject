@@ -20,9 +20,9 @@ Feature: End-to-End Product purchase Flow
     Then The user should see "Payment was successful" message and clicks on Confirm button again
     And The user should see "Thanks for your order! Your invoice number is" order confirmation message
     Examples:
-      | Product Category | Product Page | product      | quantity | Product Name | Product Quantity | Product Price | Total Price |
-      | Hand Tools       | Hand Tools   | Bolt Cutters | 2        | Bolt Cutters | 2                | $48.41        | $96.82      |
-      | Other            | Other        | Protective Gloves  | 4        | Protective Gloves  | 4                | $21.42        | $85.68      |
+      | Product Category | Product Page | product           | quantity | Product Name      | Product Quantity | Product Price | Total Price |
+      | Hand Tools       | Hand Tools   | Bolt Cutters      | 2        | Bolt Cutters      | 2                | $48.41        | $96.82      |
+      | Other            | Other        | Protective Gloves | 4        | Protective Gloves | 4                | $21.42        | $85.68      |
 
 
   @guest
