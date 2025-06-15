@@ -17,7 +17,7 @@ public class LoginPage extends BasePage {
         this.loginText = page.locator("//h3[text()='Login']");
         this.loginEmail = page.getByPlaceholder("Your email");
         this.loginPassword = page.locator("#password");
-        this.loginBtn = page.locator("[data-test='login-submit']");
+        this.loginBtn = page.locator("[data-test='login-submit']") ;
     }
 
     public void clickRegisterYourAccountBtn() {

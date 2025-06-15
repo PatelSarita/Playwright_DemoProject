@@ -1,11 +1,10 @@
-@login
 Feature: Login Functionality
   As a user  I should be able to login with valid credentials
 
   Background:
     Given the user is on the Login page
 
-  @positive
+  @login @positive
   Scenario Outline: Positive login test
     When The user enters valid "<email>" and "<password>"
     And clicks on Login button
@@ -14,7 +13,7 @@ Feature: Login Functionality
       | email           | password   |
       | priya@gmail.com | WVhft76@99 |
 
-  @positive
+  @login @positive
   Scenario Outline: Positive login test with password as bullet signs
     When The user enters valid "<email>" and "<password>"
     Then The user should only see  masked password

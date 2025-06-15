@@ -16,17 +16,17 @@ Feature: End-to-End Product purchase Flow
     And user clicks on second Proceed to checkout button
     Then the Billing Address should be displayed
     And user clicks on third Proceed to checkout button
-    And The user chooses "Buy Now Pay Later" payment method and clicks on Confirm button
-    Then The user should see "Payment was successful" message and clicks on Confirm button again
-    And The user should see "Thanks for your order! Your invoice number is" order confirmation message
+    And the user chooses "<Payment Type>" payment method with "<Installment Option>"and clicks on Confirm button
+    Then the user should see "Payment was successful" message and clicks on Confirm button again
+    And the user should see "Thanks for your order! Your invoice number is" order confirmation message
     Examples:
-      | Product Category | Product Page | product           | quantity | Product Name      | Product Quantity | Product Price | Total Price |
-      | Hand Tools       | Hand Tools   | Bolt Cutters      | 2        | Bolt Cutters      | 2                | $48.41        | $96.82      |
-      | Other            | Other        | Protective Gloves | 4        | Protective Gloves | 4                | $21.42        | $85.68      |
+      | Product Category | Product Page | product           | quantity | Product Name      | Product Quantity | Product Price | Total Price | Payment Type      | Installment Option     |
+      | Hand Tools       | Hand Tools   | Bolt Cutters      | 2        | Bolt Cutters      | 2                | $48.41        | $96.82      | Buy Now Pay Later | 6 Monthly Installments |
+      | Other            | Other        | Protective Gloves | 4        | Protective Gloves | 4                | $21.42        | $85.68      | Gift Card     |                        |
 
 
-  @guest
-  Scenario: Guest user selects multiple products from different categories and completes a purchase
+  @guest @regression
+  Scenario Outline: Guest user selects multiple products from different categories and completes a purchase
     When the user is on Home page and clicks on the Category dropdown
 
   # -- Product 1 --
@@ -63,8 +63,11 @@ Feature: End-to-End Product purchase Flow
     Then the Billing Address should be displayed
 
     And user clicks on third Proceed to checkout button
-    And The user chooses "Credit Card" payment method and clicks on Confirm button
+    And the user chooses "<Payment Type>" payment method with "<Installment Option>"and clicks on Confirm button
 
-    Then The user should see "Payment was successful" message and clicks on Confirm button again
-    And The user should see "Thanks for your order! Your invoice number is" order confirmation message
+    Then the user should see "Payment was successful" message and clicks on Confirm button again
+    And the user should see "Thanks for your order! Your invoice number is" order confirmation message
+    Examples:
+      | Payment Type | Installment Option |
+      | Gift Card    |                    |
 
