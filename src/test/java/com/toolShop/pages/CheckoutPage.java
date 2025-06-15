@@ -8,8 +8,6 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 import io.cucumber.datatable.DataTable;
 import java.util.List;
 import java.util.Map;
-
-import static com.toolShop.stepDefs.Hooks.page;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.core.StringContains.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -193,9 +191,6 @@ public class CheckoutPage extends BasePage {
     public void removeProductFromTheCart() {
         deleteButton.waitFor();
         deleteButton.click();
-//        Locator deleteBtn = page.locator("[data-icon='xmark']");
-//        deleteBtn.waitFor();
-//        deleteBtn.click();
     }
     public void removeAllProductsFromCart(){
         while(deleteButton.count() > 0){

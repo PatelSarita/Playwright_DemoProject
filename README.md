@@ -29,6 +29,7 @@ This project contains automated UI tests developed using **Java**, **Playwright*
 - **Remove Item:** Remove a specific item from the cart.
 - **Purchase Flow:** Complete purchase from product selection to order confirmation.
 - **Guest Checkout:** Guest user purchases multiple products from different categories.
+- **Purchase with Payment Methods:** Complete purchase using different types of payment methods.
 - **Logout:** Successfully logout from the My Account page.
 
 ---
@@ -40,6 +41,10 @@ This project contains automated UI tests developed using **Java**, **Playwright*
 - **Duplicate Email Registration:** Handle existing email registration gracefully.
 - **Invalid Password:** Show error on invalid password during registration.
 - **Out-of-Stock Handling:** Detect and report when a product is unavailable.
+- **Empty Cart Checkout:** Prevent checkout after removing all products from the cart.
+- **Bank Transfer Errors:** Bank Transfer fails with missing or invalid account details.
+- **Credit Card Validation:** Credit Card payment fails with invalid or expired card details.
+- **Gift Card Rejection:** Gift Card payment fails with invalid details.
 
 ---
 
@@ -68,4 +73,3 @@ This project contains automated UI tests developed using **Java**, **Playwright*
 
 ```bash
 mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
-
