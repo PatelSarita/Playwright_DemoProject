@@ -4,7 +4,7 @@ Feature: Login Functionality
   Background:
     Given the user is on the Login page
 
-  @login @positive
+  @login @positive @regression
   Scenario Outline: Positive login test
     When The user enters valid "<email>" and "<password>"
     And clicks on Login button
@@ -13,7 +13,7 @@ Feature: Login Functionality
       | email           | password   |
       | priya@gmail.com | WVhft76@99 |
 
-  @login @positive
+  @login @positive @regression
   Scenario Outline: Positive login test with password as bullet signs
     When The user enters valid "<email>" and "<password>"
     Then The user should only see  masked password
@@ -21,7 +21,7 @@ Feature: Login Functionality
       | email           | password   |
       | proya@gmail.com | WVhft76@99 |
 
-  @login @negative
+  @login @negative @regression
   Scenario Outline: Negative login test
     When The user enters invalid "<email>" or "<password>"
     And clicks on Login button

@@ -50,7 +50,6 @@ public class ProductNavigation_stepDefs extends BasePage_stepDefs {
         assert productPage.isProductDetailPageVisible(productName);
     }
 
-
     @And("there is no product available")
     public void thereIsNoProductAvailable() {
         assert productPage.areNoProductsVisible();

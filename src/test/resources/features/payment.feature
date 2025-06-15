@@ -16,7 +16,7 @@ Feature: Payment Type Functionality
       | Buy Now Pay Later | 12 Monthly Installments |
       | Gift Card         |                         |
 
-  @payment @bankTransfer @negative @regression
+   @bankTransfer @negative @regression
   Scenario Outline: Bank Transfer fails with missing or invalid account details
     Given the user is on the payment page
     When the user selects "Bank Transfer" as the payment method
@@ -33,7 +33,7 @@ Feature: Payment Type Functionality
       | Deutsch Bank | Priya Test   |                | Account number must be numeric.                                                       |
       | Invalid@Bank | Priya Test   | abcde12345     | Account number must be numeric.                                                       |
 
-@payment @creditCard @negative @regression
+ @creditCard @negative @regression
   Scenario Outline: Credit Card payment fails with invalid or expired card details
     Given the user is on the payment page
     When the user selects "Credit Card" as the payment method
@@ -51,9 +51,8 @@ Feature: Payment Type Functionality
       | 4111-1111-1111-1111 | 12/2026     | 12  | Test User       | CVV must be 3 or 4 digits.             |
       | 4111-1111-1111-1111 | 12/2026     | ABC | Test User       | CVV must be 3 or 4 digits.             |
 
-     # | 4111-1111-1111-1111 | 12/2026     | 123 |                 | Cardholder name is required | Bug found for this test case
 
-  @payment @giftCard @negative @regression
+   @giftCard @negative @regression
   Scenario Outline: Gift Card payment fails with invalid details
     Given the user is on the payment page
     When the user selects "Gift Card" as the payment method
