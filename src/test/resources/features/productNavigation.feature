@@ -2,7 +2,7 @@ Feature: Product Navigation
   As a user i want to navigate through product categories
 
 
-  @navigation @smoke
+  @navigation @positive @regression
   Scenario Outline: Navigate to product category from dropdown
     When the user is on Home page and clicks on the Category dropdown
     And selects the "<Category>"
@@ -13,7 +13,7 @@ Feature: Product Navigation
       | Hand Tools  | Hand Tools    |
       | Other       | Other         |
 
-  @hover
+  @hover @positive @regression
   Scenario Outline: Product video plays on image hover over
     Given the user is on "<Category Page>"
     When the user hovers over the image of a "<Product>"
@@ -24,7 +24,7 @@ Feature: Product Navigation
       | Hand Tools    | Bolt Cutters   |
       | Other         | Ear Protection |
 
-  @productDetails @regression
+  @productDetails @positive @regression
   Scenario Outline: View product details
     Given the user is on "<Category Page>"
     When the user clicks on "<Product>"
@@ -37,8 +37,8 @@ Feature: Product Navigation
       | Other         | Tool Cabinet       |
 
 
-  @negative @emptyProduct
-  Scenario Outline: unavailability of product
+ @emptyProduct  @negative @regression
+  Scenario Outline: Unavailability of product
     When the user is on "<Category Page>"
     And there is no product available
     Then the user should get the "There are no products found." message

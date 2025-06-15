@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class Purchase_StepDefs extends BasePage_stepDefs {
+public class E2E_Purchase_StepDefs extends BasePage_stepDefs {
 
     @Given("the user is logged in with email {string} and password {string}")
     public void theUserIsLoggedInWithEmailAndPassword(String email, String password) {
@@ -49,51 +49,51 @@ public class Purchase_StepDefs extends BasePage_stepDefs {
 
     @Then("the cart should display the {string} and {string} and {string} and correct {string}")
     public void theCartShouldDisplayTheAndAndAndCorrect(String expectedProduct, String expectedQuantity, String expectedPrice, String expectedTotalPrice) {
-        cartPage.assertProductsDetailsInCart(expectedProduct, expectedQuantity, expectedPrice, expectedTotalPrice);
+        checkoutPage.assertProductsDetailsInCart(expectedProduct, expectedQuantity, expectedPrice, expectedTotalPrice);
     }
 
 
     @And("user clicks on first Proceed to checkout button")
     public void userClicksOnFirstProceedToCheckoutButton() {
-        cartPage.clickProceedToCheckoutBtn1();
+        checkoutPage.clickProceedToCheckoutBtn1();
     }
 
 
     @Then("the user sees the message {string}")
     public void theUserSeesTheMessage(String expectedMessage) {
-        cartPage.asserCartLoggedInMsg(expectedMessage);
+        checkoutPage.asserCartLoggedInMsg(expectedMessage);
     }
 
     @And("user clicks on second Proceed to checkout button")
     public void userClicksOnSecondProceedToCheckoutButton() {
-        cartPage.clickProceedToCheckoutBtn2();
+        checkoutPage.clickProceedToCheckoutBtn2();
     }
 
     @Then("the Billing Address should be displayed")
     public void theBillingAddressShouldBeDisplayed() {
-        cartPage.assertBillingAddressIsVisible();
+        checkoutPage.assertBillingAddressIsVisible();
     }
 
     @And("user clicks on third Proceed to checkout button")
     public void userClicksOnThirdProceedToCheckoutButton() {
-        cartPage.clickProceedToCheckoutBtn3();
+        checkoutPage.clickProceedToCheckoutBtn3();
     }
 
-    @And("The user chooses {string} payment method and clicks on Confirm button")
-    public void theUserChoosesPaymentMethodAndClicksOnConfirmButton(String paymentMethod) {
-        cartPage.selectAndFillPaymentDetails(paymentMethod);
-        cartPage.clickConfirmBtn();
+    @And("the user chooses {string} payment method with {string}and clicks on Confirm button")
+    public void theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(String paymentType, String installment) {
+        checkoutPage.selectAndFillPaymentDetails(paymentType,installment);
+        checkoutPage.clickConfirmBtn();
     }
 
 
-    @Then("The user should see {string} message and clicks on Confirm button again")
+    @Then("the user should see {string} message and clicks on Confirm button again")
     public void theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(String expectedMessage) {
         BrowserUtils.assertMessage(expectedMessage);
-        cartPage.clickConfirmBtn();
+        checkoutPage.clickConfirmBtn();
     }
 
 
-    @And("The user should see {string} order confirmation message")
+    @And("the user should see {string} order confirmation message")
     public void theUserShouldSeeOrderConfirmationMessage(String expectedMessage) {
         BrowserUtils.assertMessage(expectedMessage);
     }
@@ -106,13 +106,13 @@ public class Purchase_StepDefs extends BasePage_stepDefs {
 
     @Then("the cart should display:")
     public void theCartShouldDisplay(DataTable table) {
-        cartPage.assertCartProductDataTable(table);
+        checkoutPage.assertCartProductDataTable(table);
 
     }
 
     @And("the cart also displays the {string} cart total")
     public void theCartAlsoDisplaysTheCartTotal(String expectedCartTotal) {
-        cartPage.assertCartTotal(expectedCartTotal);
+        checkoutPage.assertCartTotal(expectedCartTotal);
     }
 
 
@@ -121,6 +121,5 @@ public class Purchase_StepDefs extends BasePage_stepDefs {
         loginPage.login(email, password);
         loginPage.clickLoginBtn();
     }
-
 
 }

@@ -5,7 +5,7 @@ Feature: User Registration
   Background:
     Given the user is on the registration page
 
-   @register
+   @register @positive
   Scenario Outline: Successful registration with valid details
 
     When The user enters valid input "<First name>","<Last name>","<dob>","<Street>","<Postal code>","<City>","<State>", "<Country>","<Phone>","<Email address>" and "<Password>"
@@ -16,7 +16,7 @@ Feature: User Registration
       | First name | Last name | dob        | Street         | Postal code | City   | State  | Country | Phone     | Email address   | Password   |
       | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | priya@gmail.com | WVhft76@99 |
 
-  @negative @requiredFields
+  @requiredFields @negative
   Scenario Outline: Registration fails when mandatory fields are missing or invalid
     When The user enters invalid input "<First name>","<Last name>","<dob>","<Street>","<Postal code>","<City>","<State>", "<Country>","<Phone>","<Email address>" and "<Password>"
     And clicks on Register button
@@ -35,7 +35,7 @@ Feature: User Registration
       | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 |                 | WVhft76@99 | Email is required         |
       | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | piiya@gmail.com |            | Password is required      |
 
-  @negative @emailValidation
+   @emailValidation @negative
   Scenario Outline: User can receive an error message when registering with an existing email.
     When The user re-enters the existing information as "<First name>","<Last name>","<dob>","<Street>","<Postal code>","<City>","<State>", "<Country>","<Phone>","<Email address>" and "<Password>"
     And clicks on Register button
@@ -44,7 +44,7 @@ Feature: User Registration
       | First name | Last name | dob        | Street         | Postal code | City   | State  | Country | Phone     | Email address    | Password   | ErrorMsg                                           |
       | Priya      | Survey    | 2001-10-22 | Albert Strasse | 60043       | Berlin | Berlin | Germany | 196433333 | priya@gmail.com| WVhft76@99 | A customer with this email address already exists. |
 
-  @negative @passwordValidation
+  @passwordValidation  @negative
   Scenario Outline: Registration fails when password is invalid
     When The user enters invalid password "<Password>"
     And clicks on Register button

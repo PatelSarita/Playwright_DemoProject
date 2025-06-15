@@ -10,5 +10,5 @@ public abstract class BasePage_stepDefs {
     MyAccountPage myAccountPage = new MyAccountPage(page);
     HomePage homePage = new HomePage(page);
     ProductPage productPage = new ProductPage(page);
-    CartPage cartPage = new CartPage(page);
+    CheckoutPage checkoutPage = new CheckoutPage(page);
 }
