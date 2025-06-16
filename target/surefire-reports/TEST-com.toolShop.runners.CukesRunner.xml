@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.toolShop.runners.CukesRunner" time="1047.478" tests="66" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\User\IdeaProjects\Playwright_DemoProject\target\test-classes;C:\Users\User\IdeaProjects\Playwright_DemoProject\target\classes;C:\Users\User\.m2\repository\com\microsoft\playwright\playwright\1.44.0\playwright-1.44.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver\1.44.0\driver-1.44.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver-bundle\1.44.0\driver-bundle-1.44.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\User\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\User\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\User\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\User\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\User\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\User\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire1781292133808805381\surefirebooter-20250616080453686_3.jar C:\Users\User\AppData\Local\Temp\surefire1781292133808805381 2025-06-16T08-04-53_522-jvmRun1 surefire-20250616080453686_1tmp surefire_0-20250616080453686_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\User\IdeaProjects\Playwright_DemoProject\target\test-classes;C:\Users\User\IdeaProjects\Playwright_DemoProject\target\classes;C:\Users\User\.m2\repository\com\microsoft\playwright\playwright\1.44.0\playwright-1.44.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver\1.44.0\driver-1.44.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver-bundle\1.44.0\driver-bundle-1.44.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\User\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\User\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\User\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\User\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\User\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\User\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\User\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\User\IdeaProjects\Playwright_DemoProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire1781292133808805381\surefirebooter-20250616080453686_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
+    <property name="user.name" value="User"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.1.1.1"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="C:\Users\User\IdeaProjects\Playwright_DemoProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-17\;C:\Users\User\apache-maven-3.9.9\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\npm;;C:\Users\User\IntelliJ IDEA Community Edition 2025.1.1.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.7+8-LTS-224"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Verify that the user can add a product to the cart" classname="Cart Page Functionality" time="15.161">
+    <system-out><![CDATA[
+@cart @smoke @regression
+Scenario Outline: Verify that the user can add a product to the cart                                         # src/test/resources/features/cart.feature:14
+  When the user is on My account page and clicks on the Category dropdown                                    # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsOnMyAccountPageAndClicksOnTheCategoryDropdown()
+  And selects the "Hand Tools"                                                                               # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Hand Tools" page                                        # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+  And select the "Bolt Cutters" and "2" and clicks on Add to cart                                            # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  Then The Product added to your shopping cart message "Product added to shopping cart." should be displayed # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theProductAddedToYourShoppingCartMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Verify correct product and quantity in cart" classname="Cart Page Functionality" time="19.174">
+    <system-out><![CDATA[
+@cart @validation @regression
+Scenario Outline: Verify correct product and quantity in cart                               # src/test/resources/features/cart.feature:26
+  When the user is on My account page and clicks on the Category dropdown                   # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsOnMyAccountPageAndClicksOnTheCategoryDropdown()
+  And selects the "Hand Tools"                                                              # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Hand Tools" page                       # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+  And select the "Bolt Cutters" and "2" and clicks on Add to cart                           # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on cart icon                                                          # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCartIcon()
+  Then the cart should display the "Bolt Cutters" and "2" and "$48.41" and correct "$96.82" # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartShouldDisplayTheAndAndAndCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Update quantity of a product in the cart #1" classname="Cart Page Functionality" time="20.497">
+    <system-out><![CDATA[
+@cart @increaseQuantity @regression
+Scenario Outline: Update quantity of a product in the cart                                                                                 # src/test/resources/features/cart.feature:42
+  When the user is on My account page and clicks on the Category dropdown                                                                  # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsOnMyAccountPageAndClicksOnTheCategoryDropdown()
+  And selects the "Other"                                                                                                                  # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Other" page                                                                           # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+  And select the "Ear Protection" and "1" and clicks on Add to cart                                                                        # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on cart icon                                                                                                         # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCartIcon()
+  Then the cart should display the "Ear Protection" and "1" and "$18.58" and correct "$18.58"                                              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartShouldDisplayTheAndAndAndCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  When the user increases or decrease the quantity of "Ear Protection" to "3"                                                              # com.toolShop.stepDefs.Cart_StepDefs.theUserIncreasesOrDecreaseTheQuantityOfTo(java.lang.String,java.lang.String)
+  Then the success message "Product quantity updated." should be displayed with "Ear Protection" and "3" and "$18.58" and correct "$55.74" # com.toolShop.stepDefs.Cart_StepDefs.theSuccessMessageShouldBeDisplayedWithAndAndAndCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Update quantity of a product in the cart #2" classname="Cart Page Functionality" time="20.156">
+    <system-out><![CDATA[
+@cart @increaseQuantity @regression
+Scenario Outline: Update quantity of a product in the cart                                                                               # src/test/resources/features/cart.feature:43
+  When the user is on My account page and clicks on the Category dropdown                                                                # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsOnMyAccountPageAndClicksOnTheCategoryDropdown()
+  And selects the "Hand Tools"                                                                                                           # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Hand Tools" page                                                                    # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+  And select the "Bolt Cutters" and "4" and clicks on Add to cart                                                                        # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on cart icon                                                                                                       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCartIcon()
+  Then the cart should display the "Bolt Cutters" and "4" and "$48.41" and correct "$193.64"                                             # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartShouldDisplayTheAndAndAndCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  When the user increases or decrease the quantity of "Bolt Cutters" to "2"                                                              # com.toolShop.stepDefs.Cart_StepDefs.theUserIncreasesOrDecreaseTheQuantityOfTo(java.lang.String,java.lang.String)
+  Then the success message "Product quantity updated." should be displayed with "Bolt Cutters" and "2" and "$48.41" and correct "$96.82" # com.toolShop.stepDefs.Cart_StepDefs.theSuccessMessageShouldBeDisplayedWithAndAndAndCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Remove an item from the cart" classname="Cart Page Functionality" time="19.551">
+    <system-out><![CDATA[
+@cart @removeQuantity @regression
+Scenario Outline: Remove an item from the cart                                                # src/test/resources/features/cart.feature:57
+  When the user is on My account page and clicks on the Category dropdown                     # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsOnMyAccountPageAndClicksOnTheCategoryDropdown()
+  And selects the "Other"                                                                     # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Other" page                              # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+  And select the "Ear Protection" and "1" and clicks on Add to cart                           # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on cart icon                                                            # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCartIcon()
+  Then the cart should display the "Ear Protection" and "1" and "$18.58" and correct "$18.58" # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartShouldDisplayTheAndAndAndCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  When the user removes the product from the cart                                             # com.toolShop.stepDefs.Cart_StepDefs.theUserRemovesTheProductFromTheCart()
+  Then the message "Product deleted." should be displayed                                     # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="User cannot proceed to checkout after removing all &quot;&lt;Product&gt;&quot;" classname="Cart Page Functionality" time="44.356">
+    <system-out><![CDATA[
+@cart @deleteAll @regression
+Scenario: User cannot proceed to checkout after removing all "<Product>"           # src/test/resources/features/cart.feature:60
+  When the user is on Home page and clicks on the Category dropdown                # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOnHomePageAndClicksOnTheCategoryDropdown()
+  And selects the "Hand Tools" category                                            # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectsTheCategory(java.lang.String)
+  Then the user should be navigated to the related "Hand Tools" page               # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldBeNavigatedToTheRelatedPage(java.lang.String)
+  And select the "Adjustable Wrench" and "2" and clicks on Add to cart             # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on Category dropdown                                         # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCategoryDropdown()
+  And selects the "Power Tools" category                                           # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectsTheCategory(java.lang.String)
+  Then the user should be navigated to the related "Power Tools" page              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldBeNavigatedToTheRelatedPage(java.lang.String)
+  And select the "Cordless Drill 12V" and "1" and clicks on Add to cart            # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on Category dropdown                                         # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCategoryDropdown()
+  And selects the "Other" category                                                 # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectsTheCategory(java.lang.String)
+  Then the user should be navigated to the related "Other" page                    # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldBeNavigatedToTheRelatedPage(java.lang.String)
+  And select the "Washers" and "4" and clicks on Add to cart                       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on cart icon                                                 # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCartIcon()
+  Then the cart should display:                                                    # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartShouldDisplay(io.cucumber.datatable.DataTable)
+    | Product Name       | Product Quantity | Product Price | Total Price |
+    | Adjustable Wrench  | 2                | $20.33        | $40.66      |
+    | Cordless Drill 12V | 1                | $46.50        | $46.50      |
+    | Washers            | 4                | $3.55         | $14.20      |
+  And the cart also displays the "$101.36" cart total                              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartAlsoDisplaysTheCartTotal(java.lang.String)
+  When the user removes all the product from the cart                              # com.toolShop.stepDefs.Cart_StepDefs.theUserRemovesAllTheProductFromTheCart()
+  Then the "Product deleted." message should be displayed after deleting each item # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayedAfterDeletingEachItem(java.lang.String)
+  And the Proceed to checkout button should be not visible                         # com.toolShop.stepDefs.Cart_StepDefs.theProceedToCheckoutButtonShouldBeNotVisible()
+]]></system-out>
+  </testcase>
+  <testcase name="User completes a purchase from product selection to order confirmation" classname="End-to-End Product purchase Flow" time="27.46">
+    <system-out><![CDATA[
+@e2e @purchase @regression
+Scenario Outline: User completes a purchase from product selection to order confirmation             # src/test/resources/features/e2ePurchase.feature:24
+  Given the user is logged in with email "priya@gmail.com" and password "WVhft76@99"                 # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsLoggedInWithEmailAndPassword(java.lang.String,java.lang.String)
+  When the user is on My account page and clicks on the Category dropdown                            # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsOnMyAccountPageAndClicksOnTheCategoryDropdown()
+  And selects the "Other" category                                                                   # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectsTheCategory(java.lang.String)
+  Then the user should be navigated to the related "Other" page                                      # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldBeNavigatedToTheRelatedPage(java.lang.String)
+  And select the "Protective Gloves" and "4" and clicks on Add to cart                               # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on cart icon                                                                   # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCartIcon()
+  Then the cart should display the "Protective Gloves" and "4" and "$21.42" and correct "$85.68"     # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartShouldDisplayTheAndAndAndCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And user clicks on first Proceed to checkout button                                                # com.toolShop.stepDefs.E2E_Purchase_StepDefs.userClicksOnFirstProceedToCheckoutButton()
+  Then the user sees the message "you are already logged in. You can proceed to checkout."           # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserSeesTheMessage(java.lang.String)
+  And user clicks on second Proceed to checkout button                                               # com.toolShop.stepDefs.E2E_Purchase_StepDefs.userClicksOnSecondProceedToCheckoutButton()
+  Then the Billing Address should be displayed                                                       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theBillingAddressShouldBeDisplayed()
+  And user clicks on third Proceed to checkout button                                                # com.toolShop.stepDefs.E2E_Purchase_StepDefs.userClicksOnThirdProceedToCheckoutButton()
+  And the user chooses "Credit Card" payment method with ""and clicks on Confirm button              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(java.lang.String,java.lang.String)
+  Then the user should see "Payment was successful" message and clicks on Confirm button again       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(java.lang.String)
+  And the user should see "Thanks for your order! Your invoice number is" order confirmation message # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeOrderConfirmationMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Guest user selects multiple products from different categories and completes a purchase" classname="End-to-End Product purchase Flow" time="46.969">
+    <system-out><![CDATA[
+@guest @regression
+Scenario Outline: Guest user selects multiple products from different categories and completes a purchase                          # src/test/resources/features/e2ePurchase.feature:72
+  When the user is on Home page and clicks on the Category dropdown                                                                # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOnHomePageAndClicksOnTheCategoryDropdown()
+  And selects the "Hand Tools" category                                                                                            # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectsTheCategory(java.lang.String)
+  Then the user should be navigated to the related "Hand Tools" page                                                               # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldBeNavigatedToTheRelatedPage(java.lang.String)
+  And select the "Adjustable Wrench" and "2" and clicks on Add to cart                                                             # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on Category dropdown                                                                                         # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCategoryDropdown()
+  And selects the "Power Tools" category                                                                                           # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectsTheCategory(java.lang.String)
+  Then the user should be navigated to the related "Power Tools" page                                                              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldBeNavigatedToTheRelatedPage(java.lang.String)
+  And select the "Cordless Drill 12V" and "1" and clicks on Add to cart                                                            # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on Category dropdown                                                                                         # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCategoryDropdown()
+  And selects the "Other" category                                                                                                 # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectsTheCategory(java.lang.String)
+  Then the user should be navigated to the related "Other" page                                                                    # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldBeNavigatedToTheRelatedPage(java.lang.String)
+  And select the "Washers" and "4" and clicks on Add to cart                                                                       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.selectTheAndAndClicksOnAddToCart(java.lang.String,java.lang.String)
+  And the user clicks on cart icon                                                                                                 # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserClicksOnCartIcon()
+  Then the cart should display:                                                                                                    # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartShouldDisplay(io.cucumber.datatable.DataTable)
+    | Product Name       | Product Quantity | Product Price | Total Price |
+    | Adjustable Wrench  | 2                | $20.33        | $40.66      |
+    | Cordless Drill 12V | 1                | $46.50        | $46.50      |
+    | Washers            | 4                | $3.55         | $14.20      |
+  And the cart also displays the "$101.36" cart total                                                                              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theCartAlsoDisplaysTheCartTotal(java.lang.String)
+  And user clicks on first Proceed to checkout button                                                                              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.userClicksOnFirstProceedToCheckoutButton()
+  Then the log in page should be displayed and the user enters valid "priya@gmail.com" and "WVhft76@99" and clicks on login button # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theLogInPageShouldBeDisplayedAndTheUserEntersValidAndAndClicksOnLoginButton(java.lang.String,java.lang.String)
+  Then the user sees the message "you are already logged in. You can proceed to checkout."                                         # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserSeesTheMessage(java.lang.String)
+  And user clicks on second Proceed to checkout button                                                                             # com.toolShop.stepDefs.E2E_Purchase_StepDefs.userClicksOnSecondProceedToCheckoutButton()
+  Then the Billing Address should be displayed                                                                                     # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theBillingAddressShouldBeDisplayed()
+  And user clicks on third Proceed to checkout button                                                                              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.userClicksOnThirdProceedToCheckoutButton()
+  And the user chooses "Gift Card" payment method with ""and clicks on Confirm button                                              # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(java.lang.String,java.lang.String)
+  Then the user should see "Payment was successful" message and clicks on Confirm button again                                     # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(java.lang.String)
+  And the user should see "Thanks for your order! Your invoice number is" order confirmation message                               # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeOrderConfirmationMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Positive login test" classname="Login Functionality" time="8.97">
+    <system-out><![CDATA[
+@login @positive @regression
+Scenario Outline: Positive login test                                     # src/test/resources/features/login.feature:14
+  Given the user is on the Login page                                     # com.toolShop.stepDefs.Login_StepDefs.theUserIsOnTheLoginPage()
+  When The user enters valid "priya@gmail.com" and "WVhft76@99"           # com.toolShop.stepDefs.Login_StepDefs.theUserEntersValidAnd(java.lang.String,java.lang.String)
+  And clicks on Login button                                              # com.toolShop.stepDefs.Login_StepDefs.clicksOnLoginButton()
+  Then The user should be able to login and redirected to My account page # com.toolShop.stepDefs.Login_StepDefs.theUserShouldBeAbleToLoginAndRedirectedToMyAccountPage()
+]]></system-out>
+  </testcase>
+  <testcase name="Positive login test with password as bullet signs" classname="Login Functionality" time="6.667">
+    <system-out><![CDATA[
+@login @positive @regression
+Scenario Outline: Positive login test with password as bullet signs # src/test/resources/features/login.feature:22
+  Given the user is on the Login page                               # com.toolShop.stepDefs.Login_StepDefs.theUserIsOnTheLoginPage()
+  When The user enters valid "proya@gmail.com" and "WVhft76@99"     # com.toolShop.stepDefs.Login_StepDefs.theUserEntersValidAnd(java.lang.String,java.lang.String)
+  Then The user should only see  masked password                    # com.toolShop.stepDefs.Login_StepDefs.theUserShouldOnlySeeMaskedPassword()
+]]></system-out>
+  </testcase>
+  <testcase name="Negative login test #1" classname="Login Functionality" time="9.185">
+    <system-out><![CDATA[
+@login @negative @regression
+Scenario Outline: Negative login test                             # src/test/resources/features/login.feature:31
+  Given the user is on the Login page                             # com.toolShop.stepDefs.Login_StepDefs.theUserIsOnTheLoginPage()
+  When The user enters invalid "proya@gmail.com" or ""            # com.toolShop.stepDefs.Login_StepDefs.theUserEntersInvalidOr(java.lang.String,java.lang.String)
+  And clicks on Login button                                      # com.toolShop.stepDefs.Login_StepDefs.clicksOnLoginButton()
+  Then The user should get the appropriate "Password is required" # com.toolShop.stepDefs.Login_StepDefs.theUserShouldGetTheAppropriate(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Negative login test #2" classname="Login Functionality" time="8.904">
+    <system-out><![CDATA[
+@login @negative @regression
+Scenario Outline: Negative login test                          # src/test/resources/features/login.feature:32
+  Given the user is on the Login page                          # com.toolShop.stepDefs.Login_StepDefs.theUserIsOnTheLoginPage()
+  When The user enters invalid "" or "WVhft76@99"              # com.toolShop.stepDefs.Login_StepDefs.theUserEntersInvalidOr(java.lang.String,java.lang.String)
+  And clicks on Login button                                   # com.toolShop.stepDefs.Login_StepDefs.clicksOnLoginButton()
+  Then The user should get the appropriate "Email is required" # com.toolShop.stepDefs.Login_StepDefs.theUserShouldGetTheAppropriate(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Negative login test #3" classname="Login Functionality" time="9.031">
+    <system-out><![CDATA[
+@login @negative @regression
+Scenario Outline: Negative login test                                  # src/test/resources/features/login.feature:33
+  Given the user is on the Login page                                  # com.toolShop.stepDefs.Login_StepDefs.theUserIsOnTheLoginPage()
+  When The user enters invalid "proya@gmail.co" or "WVhft76@99"        # com.toolShop.stepDefs.Login_StepDefs.theUserEntersInvalidOr(java.lang.String,java.lang.String)
+  And clicks on Login button                                           # com.toolShop.stepDefs.Login_StepDefs.clicksOnLoginButton()
+  Then The user should get the appropriate "Invalid email or password" # com.toolShop.stepDefs.Login_StepDefs.theUserShouldGetTheAppropriate(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Negative login test #4" classname="Login Functionality" time="9.57">
+    <system-out><![CDATA[
+@login @negative @regression
+Scenario Outline: Negative login test                                  # src/test/resources/features/login.feature:34
+  Given the user is on the Login page                                  # com.toolShop.stepDefs.Login_StepDefs.theUserIsOnTheLoginPage()
+  When The user enters invalid "proya@gmail.com" or "WVhft76@9"        # com.toolShop.stepDefs.Login_StepDefs.theUserEntersInvalidOr(java.lang.String,java.lang.String)
+  And clicks on Login button                                           # com.toolShop.stepDefs.Login_StepDefs.clicksOnLoginButton()
+  Then The user should get the appropriate "Invalid email or password" # com.toolShop.stepDefs.Login_StepDefs.theUserShouldGetTheAppropriate(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Successful logout from My Account page" classname="Logout functionality" time="11.293">
+    <system-out><![CDATA[
+@logOut @positive @regression
+Scenario: Successful logout from My Account page                                     # src/test/resources/features/logout.feature:5
+  Given the user is logged in with email "priya@gmail.com" and password "WVhft76@99" # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserIsLoggedInWithEmailAndPassword(java.lang.String,java.lang.String)
+  When the user is on My Account page and click on users name dropdown               # com.toolShop.stepDefs.Logout_StepDefs.theUserIsOnMyAccountPageAndClickOnUsersNameDropdown()
+  And select logout option                                                           # com.toolShop.stepDefs.Logout_StepDefs.selectLogoutOption()
+  Then the user should logged out successfully and navigated to login page           # com.toolShop.stepDefs.Logout_StepDefs.theUserShouldLoggedOutSuccessfullyAndNavigatedToLoginPage()
+]]></system-out>
+  </testcase>
+  <testcase name="User completes a purchase using different types of payment methods #1" classname="Payment Type Functionality" time="24.396">
+    <system-out><![CDATA[
+@payment @positive @regression
+Scenario Outline: User completes a purchase using different types of payment methods                 # src/test/resources/features/payment.feature:13
+  Given the user is on the payment page                                                              # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user chooses "Bank Transfer" payment method with ""and clicks on Confirm button           # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(java.lang.String,java.lang.String)
+  Then the user should see "Payment was successful" message and clicks on Confirm button again       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(java.lang.String)
+  And the user should see "Thanks for your order! Your invoice number is" order confirmation message # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeOrderConfirmationMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="User completes a purchase using different types of payment methods #2" classname="Payment Type Functionality" time="24.039">
+    <system-out><![CDATA[
+@payment @positive @regression
+Scenario Outline: User completes a purchase using different types of payment methods                 # src/test/resources/features/payment.feature:14
+  Given the user is on the payment page                                                              # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+COD selected, no extra input needed.
+  When the user chooses "Cash on Delivery" payment method with ""and clicks on Confirm button        # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(java.lang.String,java.lang.String)
+  Then the user should see "Payment was successful" message and clicks on Confirm button again       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(java.lang.String)
+  And the user should see "Thanks for your order! Your invoice number is" order confirmation message # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeOrderConfirmationMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="User completes a purchase using different types of payment methods #3" classname="Payment Type Functionality" time="24.282">
+    <system-out><![CDATA[
+@payment @positive @regression
+Scenario Outline: User completes a purchase using different types of payment methods                 # src/test/resources/features/payment.feature:15
+  Given the user is on the payment page                                                              # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user chooses "Credit Card" payment method with ""and clicks on Confirm button             # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(java.lang.String,java.lang.String)
+  Then the user should see "Payment was successful" message and clicks on Confirm button again       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(java.lang.String)
+  And the user should see "Thanks for your order! Your invoice number is" order confirmation message # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeOrderConfirmationMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="User completes a purchase using different types of payment methods #4" classname="Payment Type Functionality" time="24.419">
+    <system-out><![CDATA[
+@payment @positive @regression
+Scenario Outline: User completes a purchase using different types of payment methods                                  # src/test/resources/features/payment.feature:16
+  Given the user is on the payment page                                                                               # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+BNPL with 12 Monthly Installments selected.
+  When the user chooses "Buy Now Pay Later" payment method with "12 Monthly Installments"and clicks on Confirm button # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(java.lang.String,java.lang.String)
+  Then the user should see "Payment was successful" message and clicks on Confirm button again                        # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(java.lang.String)
+  And the user should see "Thanks for your order! Your invoice number is" order confirmation message                  # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeOrderConfirmationMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="User completes a purchase using different types of payment methods #5" classname="Payment Type Functionality" time="24.208">
+    <system-out><![CDATA[
+@payment @positive @regression
+Scenario Outline: User completes a purchase using different types of payment methods                 # src/test/resources/features/payment.feature:17
+  Given the user is on the payment page                                                              # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user chooses "Gift Card" payment method with ""and clicks on Confirm button               # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserChoosesPaymentMethodWithAndClicksOnConfirmButton(java.lang.String,java.lang.String)
+  Then the user should see "Payment was successful" message and clicks on Confirm button again       # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeMessageAndClicksOnConfirmButtonAgain(java.lang.String)
+  And the user should see "Thanks for your order! Your invoice number is" order confirmation message # com.toolShop.stepDefs.E2E_Purchase_StepDefs.theUserShouldSeeOrderConfirmationMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Bank Transfer fails with missing or invalid account details #1" classname="Payment Type Functionality" time="22.088">
+    <system-out><![CDATA[
+@bankTransfer @negative @regression
+Scenario Outline: Bank Transfer fails with missing or invalid account details                        # src/test/resources/features/payment.feature:29
+  Given the user is on the payment page                                                              # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Bank Transfer" as the payment method                                        # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And the user do not enters bank name "", account name "Priya Test", and account number "123456789" # com.toolShop.stepDefs.Payment_StepDefs.theUserDoNotEntersBankNameAccountNameAndAccountNumber(java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                         # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Bank name can only contain letters and spaces." should be displayed               # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Bank Transfer fails with missing or invalid account details #2" classname="Payment Type Functionality" time="21.964">
+    <system-out><![CDATA[
+@bankTransfer @negative @regression
+Scenario Outline: Bank Transfer fails with missing or invalid account details                               # src/test/resources/features/payment.feature:30
+  Given the user is on the payment page                                                                     # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Bank Transfer" as the payment method                                               # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And the user do not enters bank name "1234567", account name "Priya Test", and account number "123456789" # com.toolShop.stepDefs.Payment_StepDefs.theUserDoNotEntersBankNameAccountNameAndAccountNumber(java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Bank name can only contain letters and spaces." should be displayed                      # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Bank Transfer fails with missing or invalid account details #3" classname="Payment Type Functionality" time="22.21">
+    <system-out><![CDATA[
+@bankTransfer @negative @regression
+Scenario Outline: Bank Transfer fails with missing or invalid account details                        # src/test/resources/features/payment.feature:31
+  Given the user is on the payment page                                                              # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Bank Transfer" as the payment method                                        # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And the user do not enters bank name "", account name "Priya@Test", and account number "123456789" # com.toolShop.stepDefs.Payment_StepDefs.theUserDoNotEntersBankNameAccountNameAndAccountNumber(java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                         # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Bank name can only contain letters and spaces." should be displayed               # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Bank Transfer fails with missing or invalid account details #4" classname="Payment Type Functionality" time="22.087">
+    <system-out><![CDATA[
+@bankTransfer @negative @regression
+Scenario Outline: Bank Transfer fails with missing or invalid account details                                                 # src/test/resources/features/payment.feature:32
+  Given the user is on the payment page                                                                                       # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Bank Transfer" as the payment method                                                                 # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And the user do not enters bank name "Deutsch Bank", account name "", and account number "123456789"                        # com.toolShop.stepDefs.Payment_StepDefs.theUserDoNotEntersBankNameAccountNameAndAccountNumber(java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                                  # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Account name can contain letters, numbers, spaces, periods, apostrophes, and hyphens." should be displayed # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Bank Transfer fails with missing or invalid account details #5" classname="Payment Type Functionality" time="22.251">
+    <system-out><![CDATA[
+@bankTransfer @negative @regression
+Scenario Outline: Bank Transfer fails with missing or invalid account details                           # src/test/resources/features/payment.feature:33
+  Given the user is on the payment page                                                                 # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Bank Transfer" as the payment method                                           # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And the user do not enters bank name "Deutsch Bank", account name "Priya Test", and account number "" # com.toolShop.stepDefs.Payment_StepDefs.theUserDoNotEntersBankNameAccountNameAndAccountNumber(java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                            # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Account number must be numeric." should be displayed                                 # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Bank Transfer fails with missing or invalid account details #6" classname="Payment Type Functionality" time="22.112">
+    <system-out><![CDATA[
+@bankTransfer @negative @regression
+Scenario Outline: Bank Transfer fails with missing or invalid account details                                     # src/test/resources/features/payment.feature:34
+  Given the user is on the payment page                                                                           # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Bank Transfer" as the payment method                                                     # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And the user do not enters bank name "Invalid@Bank", account name "Priya Test", and account number "abcde12345" # com.toolShop.stepDefs.Payment_StepDefs.theUserDoNotEntersBankNameAccountNameAndAccountNumber(java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                      # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Account number must be numeric." should be displayed                                           # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Credit Card payment fails with invalid or expired card details #1" classname="Payment Type Functionality" time="22.043">
+    <system-out><![CDATA[
+@creditCard @negative @regression
+Scenario Outline: Credit Card payment fails with invalid or expired card details                                   # src/test/resources/features/payment.feature:46
+  Given the user is on the payment page                                                                            # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Credit Card" as the payment method                                                        # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "4111-1111-1111-111" as card number, "01/2020" as expiry, "123" as CVV, and "Test User" as cardholder # com.toolShop.stepDefs.Payment_StepDefs.entersAsCardNumberAsExpiryAsCVVAndAsCardholder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                       # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Invalid card number format." should be displayed                                                # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Credit Card payment fails with invalid or expired card details #2" classname="Payment Type Functionality" time="22.026">
+    <system-out><![CDATA[
+@creditCard @negative @regression
+Scenario Outline: Credit Card payment fails with invalid or expired card details                                 # src/test/resources/features/payment.feature:47
+  Given the user is on the payment page                                                                          # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Credit Card" as the payment method                                                      # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "4111111111110111" as card number, "01/2020" as expiry, "123" as CVV, and "Test User" as cardholder # com.toolShop.stepDefs.Payment_StepDefs.entersAsCardNumberAsExpiryAsCVVAndAsCardholder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                     # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Invalid card number format." should be displayed                                              # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Credit Card payment fails with invalid or expired card details #3" classname="Payment Type Functionality" time="22.046">
+    <system-out><![CDATA[
+@creditCard @negative @regression
+Scenario Outline: Credit Card payment fails with invalid or expired card details                                    # src/test/resources/features/payment.feature:48
+  Given the user is on the payment page                                                                             # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Credit Card" as the payment method                                                         # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "4111-1111-1111-1111" as card number, "12/2024" as expiry, "123" as CVV, and "Test User" as cardholder # com.toolShop.stepDefs.Payment_StepDefs.entersAsCardNumberAsExpiryAsCVVAndAsCardholder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                        # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Expiration date must be in the future." should be displayed                                      # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Credit Card payment fails with invalid or expired card details #4" classname="Payment Type Functionality" time="22.111">
+    <system-out><![CDATA[
+@creditCard @negative @regression
+Scenario Outline: Credit Card payment fails with invalid or expired card details                                    # src/test/resources/features/payment.feature:49
+  Given the user is on the payment page                                                                             # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Credit Card" as the payment method                                                         # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "4111-1111-1111-1111" as card number, "22/2026" as expiry, "123" as CVV, and "Test User" as cardholder # com.toolShop.stepDefs.Payment_StepDefs.entersAsCardNumberAsExpiryAsCVVAndAsCardholder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                        # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Invalid date format. Use MM/YYYY." should be displayed                                           # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Credit Card payment fails with invalid or expired card details #5" classname="Payment Type Functionality" time="22.091">
+    <system-out><![CDATA[
+@creditCard @negative @regression
+Scenario Outline: Credit Card payment fails with invalid or expired card details                                     # src/test/resources/features/payment.feature:50
+  Given the user is on the payment page                                                                              # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Credit Card" as the payment method                                                          # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "4111-1111-1111-1111" as card number, "22/20244" as expiry, "123" as CVV, and "Test User" as cardholder # com.toolShop.stepDefs.Payment_StepDefs.entersAsCardNumberAsExpiryAsCVVAndAsCardholder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                         # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Invalid date format. Use MM/YYYY." should be displayed                                            # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Credit Card payment fails with invalid or expired card details #6" classname="Payment Type Functionality" time="22.262">
+    <system-out><![CDATA[
+@creditCard @negative @regression
+Scenario Outline: Credit Card payment fails with invalid or expired card details                                   # src/test/resources/features/payment.feature:51
+  Given the user is on the payment page                                                                            # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Credit Card" as the payment method                                                        # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "4111-1111-1111-1111" as card number, "12/2026" as expiry, "12" as CVV, and "Test User" as cardholder # com.toolShop.stepDefs.Payment_StepDefs.entersAsCardNumberAsExpiryAsCVVAndAsCardholder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                       # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "CVV must be 3 or 4 digits." should be displayed                                                 # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Credit Card payment fails with invalid or expired card details #7" classname="Payment Type Functionality" time="22.167">
+    <system-out><![CDATA[
+@creditCard @negative @regression
+Scenario Outline: Credit Card payment fails with invalid or expired card details                                    # src/test/resources/features/payment.feature:52
+  Given the user is on the payment page                                                                             # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Credit Card" as the payment method                                                         # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "4111-1111-1111-1111" as card number, "12/2026" as expiry, "ABC" as CVV, and "Test User" as cardholder # com.toolShop.stepDefs.Payment_StepDefs.entersAsCardNumberAsExpiryAsCVVAndAsCardholder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                                                        # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "CVV must be 3 or 4 digits." should be displayed                                                  # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Gift Card payment fails with invalid details #1" classname="Payment Type Functionality" time="22.1">
+    <system-out><![CDATA[
+@giftCard @negative @regression
+Scenario Outline: Gift Card payment fails with invalid details                 # src/test/resources/features/payment.feature:65
+  Given the user is on the payment page                                        # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Gift Card" as the payment method                      # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "" as the gift card number and "1212" as the validation code      # com.toolShop.stepDefs.Payment_StepDefs.entersAsTheGiftCardNumberAndAsTheValidationCode(java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                   # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Gift card number must be alphanumeric." should be displayed # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Gift Card payment fails with invalid details #2" classname="Payment Type Functionality" time="22.072">
+    <system-out><![CDATA[
+@giftCard @negative @regression
+Scenario Outline: Gift Card payment fails with invalid details                      # src/test/resources/features/payment.feature:66
+  Given the user is on the payment page                                             # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Gift Card" as the payment method                           # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "112!ab1876" as the gift card number and "1212" as the validation code # com.toolShop.stepDefs.Payment_StepDefs.entersAsTheGiftCardNumberAndAsTheValidationCode(java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                        # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Gift card number must be alphanumeric." should be displayed      # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Gift Card payment fails with invalid details #3" classname="Payment Type Functionality" time="22.13">
+    <system-out><![CDATA[
+@giftCard @negative @regression
+Scenario Outline: Gift Card payment fails with invalid details                   # src/test/resources/features/payment.feature:67
+  Given the user is on the payment page                                          # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Gift Card" as the payment method                        # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "GIFTCARD123" as the gift card number and "" as the validation code # com.toolShop.stepDefs.Payment_StepDefs.entersAsTheGiftCardNumberAndAsTheValidationCode(java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                     # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Validation code must be alphanumeric." should be displayed    # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Gift Card payment fails with invalid details #4" classname="Payment Type Functionality" time="22.033">
+    <system-out><![CDATA[
+@giftCard @negative @regression
+Scenario Outline: Gift Card payment fails with invalid details                          # src/test/resources/features/payment.feature:68
+  Given the user is on the payment page                                                 # com.toolShop.stepDefs.Payment_StepDefs.theUserIsOnThePaymentPage()
+  When the user selects "Gift Card" as the payment method                               # com.toolShop.stepDefs.Payment_StepDefs.theUserSelectsAsThePaymentMethod(java.lang.String)
+  And enters "GIFTCARD123" as the gift card number and "12-34-5" as the validation code # com.toolShop.stepDefs.Payment_StepDefs.entersAsTheGiftCardNumberAndAsTheValidationCode(java.lang.String,java.lang.String)
+  Then the Confirm button should be disabled                                            # com.toolShop.stepDefs.Payment_StepDefs.theConfirmButtonShouldBeDisabled()
+  And the message "Validation code must be alphanumeric." should be displayed           # com.toolShop.stepDefs.Cart_StepDefs.theMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Navigate to product category from dropdown #1" classname="Product Navigation" time="9.904">
+    <system-out><![CDATA[
+@navigation @positive @regression
+Scenario Outline: Navigate to product category from dropdown           # src/test/resources/features/productNavigation.feature:12
+  When the user is on Home page and clicks on the Category dropdown    # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOnHomePageAndClicksOnTheCategoryDropdown()
+  And selects the "Power Tools"                                        # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Power Tools" page # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Navigate to product category from dropdown #2" classname="Product Navigation" time="9.812">
+    <system-out><![CDATA[
+@navigation @positive @regression
+Scenario Outline: Navigate to product category from dropdown          # src/test/resources/features/productNavigation.feature:13
+  When the user is on Home page and clicks on the Category dropdown   # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOnHomePageAndClicksOnTheCategoryDropdown()
+  And selects the "Hand Tools"                                        # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Hand Tools" page # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Navigate to product category from dropdown #3" classname="Product Navigation" time="9.677">
+    <system-out><![CDATA[
+@navigation @positive @regression
+Scenario Outline: Navigate to product category from dropdown        # src/test/resources/features/productNavigation.feature:14
+  When the user is on Home page and clicks on the Category dropdown # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOnHomePageAndClicksOnTheCategoryDropdown()
+  And selects the "Other"                                           # com.toolShop.stepDefs.ProductNavigation_stepDefs.selectsThe(java.lang.String)
+  Then the user should be navigated to the relevant "Other" page    # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldBeNavigatedToTheRelevant(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Product video plays on image hover over #1" classname="Product Navigation" time="11.066">
+    <system-out><![CDATA[
+@hover @positive @regression
+Scenario Outline: Product video plays on image hover over               # src/test/resources/features/productNavigation.feature:23
+  Given the user is on "Power Tools"                                    # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOn(java.lang.String)
+  When the user hovers over the image of a "Sheet Sander"               # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserHoversOverTheImageOfA(java.lang.String)
+Transform style for: Sheet Sander is: matrix(1.14647, 0, 0, 1.14647, 0, 0)
+  Then the corresponding "Sheet Sander" video should automatically play # com.toolShop.stepDefs.ProductNavigation_stepDefs.theCorrespondingVideoShouldAutomaticallyPlay(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Product video plays on image hover over #2" classname="Product Navigation" time="10.854">
+    <system-out><![CDATA[
+@hover @positive @regression
+Scenario Outline: Product video plays on image hover over               # src/test/resources/features/productNavigation.feature:24
+  Given the user is on "Hand Tools"                                     # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOn(java.lang.String)
+  When the user hovers over the image of a "Bolt Cutters"               # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserHoversOverTheImageOfA(java.lang.String)
+Transform style for: Bolt Cutters is: matrix(1.14647, 0, 0, 1.14647, 0, 0)
+  Then the corresponding "Bolt Cutters" video should automatically play # com.toolShop.stepDefs.ProductNavigation_stepDefs.theCorrespondingVideoShouldAutomaticallyPlay(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Product video plays on image hover over #3" classname="Product Navigation" time="10.803">
+    <system-out><![CDATA[
+@hover @positive @regression
+Scenario Outline: Product video plays on image hover over                 # src/test/resources/features/productNavigation.feature:25
+  Given the user is on "Other"                                            # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOn(java.lang.String)
+  When the user hovers over the image of a "Ear Protection"               # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserHoversOverTheImageOfA(java.lang.String)
+Transform style for: Ear Protection is: matrix(1.14647, 0, 0, 1.14647, 0, 0)
+  Then the corresponding "Ear Protection" video should automatically play # com.toolShop.stepDefs.ProductNavigation_stepDefs.theCorrespondingVideoShouldAutomaticallyPlay(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="View product details #1" classname="Product Navigation" time="7.374">
+    <system-out><![CDATA[
+@productDetails @positive @regression
+Scenario Outline: View product details                                      # src/test/resources/features/productNavigation.feature:35
+  Given the user is on "Power Tools"                                        # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOn(java.lang.String)
+  When the user clicks on "Cordless Drill 12V"                              # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserClicksOn(java.lang.String)
+titleText = Cordless Drill 12V
+  Then the user should see the product detail page for "Cordless Drill 12V" # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldSeeTheProductDetailPageFor(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="View product details #2" classname="Product Navigation" time="9.43">
+    <system-out><![CDATA[
+@productDetails @positive @regression
+Scenario Outline: View product details                                # src/test/resources/features/productNavigation.feature:36
+  Given the user is on "Hand Tools"                                   # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOn(java.lang.String)
+  When the user clicks on "Square Ruler"                              # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserClicksOn(java.lang.String)
+titleText = Square Ruler
+  Then the user should see the product detail page for "Square Ruler" # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldSeeTheProductDetailPageFor(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="View product details #3" classname="Product Navigation" time="8.563">
+    <system-out><![CDATA[
+@productDetails @positive @regression
+Scenario Outline: View product details                                # src/test/resources/features/productNavigation.feature:37
+  Given the user is on "Other"                                        # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOn(java.lang.String)
+  When the user clicks on "Tool Cabinet"                              # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserClicksOn(java.lang.String)
+titleText = Tool Cabinet
+  Then the user should see the product detail page for "Tool Cabinet" # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldSeeTheProductDetailPageFor(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Unavailability of product" classname="Product Navigation" time="7.516">
+    <system-out><![CDATA[
+@emptyProduct @negative @regression
+Scenario Outline: Unavailability of product                           # src/test/resources/features/productNavigation.feature:47
+  When the user is on "Special Tools"                                 # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserIsOn(java.lang.String)
+Product items found: 0
+  And there is no product available                                   # com.toolShop.stepDefs.ProductNavigation_stepDefs.thereIsNoProductAvailable()
+  Then the user should get the "There are no products found." message # com.toolShop.stepDefs.ProductNavigation_stepDefs.theUserShouldGetTheMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Successful registration with valid details" classname="User Registration" time="9.572">
+    <system-out><![CDATA[
+@register @positive
+Scenario Outline: Successful registration with valid details                                                                                                         # src/test/resources/features/register.feature:16
+  Given the user is on the registration page                                                                                                                         # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters valid input "Priya","Survey","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "Germany","196433333","riya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersValidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                      # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The user should be navigated to Login page                                                                                                                    # com.toolShop.stepDefs.Register_StepDefs.theUserShouldBeNavigatedToLoginPage()
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #1" classname="User Registration" time="9.279">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                                  # src/test/resources/features/register.feature:25
+  Given the user is on the registration page                                                                                                                       # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "","Survey","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "Germany","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                    # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "First name is required"                                                                           # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #2" classname="User Registration" time="9.321">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                                 # src/test/resources/features/register.feature:26
+  Given the user is on the registration page                                                                                                                      # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "Germany","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                   # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Last name is required"                                                                           # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #3" classname="User Registration" time="9.285">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                             # src/test/resources/features/register.feature:27
+  Given the user is on the registration page                                                                                                                  # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","","Albert Strasse","60043","Berlin","Berlin", "Germany","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                               # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Date of Birth is required"                                                                   # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #4" classname="User Registration" time="9.331">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                         # src/test/resources/features/register.feature:28
+  Given the user is on the registration page                                                                                                              # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","","60043","Berlin","Berlin", "Germany","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                           # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Street is required"                                                                      # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #5" classname="User Registration" time="9.374">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                                  # src/test/resources/features/register.feature:29
+  Given the user is on the registration page                                                                                                                       # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","Albert Strasse","","Berlin","Berlin", "Germany","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                    # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Postcode is required"                                                                             # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #6" classname="User Registration" time="9.308">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                                 # src/test/resources/features/register.feature:30
+  Given the user is on the registration page                                                                                                                      # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","Albert Strasse","60043","","Berlin", "Germany","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                   # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "City is required"                                                                                # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #7" classname="User Registration" time="9.422">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                                 # src/test/resources/features/register.feature:31
+  Given the user is on the registration page                                                                                                                      # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","Albert Strasse","60043","Berlin","", "Germany","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                   # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "State is required"                                                                               # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #8" classname="User Registration" time="9.51">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                                # src/test/resources/features/register.feature:32
+  Given the user is on the registration page                                                                                                                     # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "","196433333","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                  # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Country is required"                                                                            # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #9" classname="User Registration" time="9.865">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                              # src/test/resources/features/register.feature:33
+  Given the user is on the registration page                                                                                                                   # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "Germany","","piiya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Phone is required."                                                                           # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #10" classname="User Registration" time="9.305">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                        # src/test/resources/features/register.feature:34
+  Given the user is on the registration page                                                                                                             # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "Germany","196433333","" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                          # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Email is required"                                                                      # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when mandatory fields are missing or invalid #11" classname="User Registration" time="9.328">
+    <system-out><![CDATA[
+@register @requiredFields @negative
+Scenario Outline: Registration fails when mandatory fields are missing or invalid                                                                             # src/test/resources/features/register.feature:35
+  Given the user is on the registration page                                                                                                                  # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid input "Priya","Survey","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "Germany","196433333","piiya@gmail.com" and "" # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidInputAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                               # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Password is required"                                                                        # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="User can receive an error message when registering with an existing email." classname="User Registration" time="9.314">
+    <system-out><![CDATA[
+@register @emailValidation @negative
+Scenario Outline: User can receive an error message when registering with an existing email.                                                                                             # src/test/resources/features/register.feature:44
+  Given the user is on the registration page                                                                                                                                             # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user re-enters the existing information as "Priya","Survey","2001-10-22","Albert Strasse","60043","Berlin","Berlin", "Germany","196433333","priya@gmail.com" and "WVhft76@99" # com.toolShop.stepDefs.Register_StepDefs.theUserReEntersTheExistingInformationAsAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And clicks on Register button                                                                                                                                                          # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "A customer with this email address already exists."                                                                     # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when password is invalid #1" classname="User Registration" time="9.208">
+    <system-out><![CDATA[
+@register @passwordValidation @negative
+Scenario Outline: Registration fails when password is invalid                                                 # src/test/resources/features/register.feature:54
+  Given the user is on the registration page                                                                  # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid password "test"                                                                # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidPassword(java.lang.String)
+  And clicks on Register button                                                                               # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Password must be minimal 6 characters long." # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when password is invalid #2" classname="User Registration" time="9.023">
+    <system-out><![CDATA[
+@register @passwordValidation @negative
+Scenario Outline: Registration fails when password is invalid                                                  # src/test/resources/features/register.feature:55
+  Given the user is on the registration page                                                                   # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid password "Test1234"                                                             # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidPassword(java.lang.String)
+  And clicks on Register button                                                                                # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Password can not include invalid characters." # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when password is invalid #3" classname="User Registration" time="9.757">
+    <system-out><![CDATA[
+@register @passwordValidation @negative
+Scenario Outline: Registration fails when password is invalid                                                 # src/test/resources/features/register.feature:56
+  Given the user is on the registration page                                                                  # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid password "Test@"                                                               # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidPassword(java.lang.String)
+  And clicks on Register button                                                                               # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Password must be minimal 6 characters long." # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when password is invalid #4" classname="User Registration" time="9.132">
+    <system-out><![CDATA[
+@register @passwordValidation @negative
+Scenario Outline: Registration fails when password is invalid                                                  # src/test/resources/features/register.feature:57
+  Given the user is on the registration page                                                                   # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid password "TEST@1234"                                                            # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidPassword(java.lang.String)
+  And clicks on Register button                                                                                # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Password can not include invalid characters." # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when password is invalid #5" classname="User Registration" time="9.24">
+    <system-out><![CDATA[
+@register @passwordValidation @negative
+Scenario Outline: Registration fails when password is invalid                                                  # src/test/resources/features/register.feature:58
+  Given the user is on the registration page                                                                   # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid password "test@1234"                                                            # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidPassword(java.lang.String)
+  And clicks on Register button                                                                                # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Password can not include invalid characters." # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Registration fails when password is invalid #6" classname="User Registration" time="9.154">
+    <system-out><![CDATA[
+@register @passwordValidation @negative
+Scenario Outline: Registration fails when password is invalid                                                  # src/test/resources/features/register.feature:59
+  Given the user is on the registration page                                                                   # com.toolShop.stepDefs.Register_StepDefs.the_user_is_on_the_registration_page()
+  When The user enters invalid password "Test@abcd"                                                            # com.toolShop.stepDefs.Register_StepDefs.theUserEntersInvalidPassword(java.lang.String)
+  And clicks on Register button                                                                                # com.toolShop.stepDefs.Register_StepDefs.clicksOnRegisterButton()
+  Then The registration should fail with appropriate validation "Password can not include invalid characters." # com.toolShop.stepDefs.Register_StepDefs.theRegistrationShouldFailWithAppropriateValidation(java.lang.String)
+]]></system-out>
+  </testcase>
+</testsuite>
