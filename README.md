@@ -73,3 +73,35 @@ This project contains automated UI tests developed using **Java**, **Playwright*
 
 ```bash
 mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
+```
+
+---
+
+## ▶️ Running the Tests
+
+### 🥪 Run All Tests via Maven
+
+```bash
+mvn test
+```
+
+### 🍿 Run Specific Tagged Tests
+
+You can tag feature files or scenarios (e.g., `@register`, `@regression`) and run them like so:
+
+```bash
+mvn test -Dcucumber.filter.tags="@register"
+```
+
+To **run `@register` first**, and then others (like `@regression`), structure your Cucumber runner or test suites accordingly using Maven profiles or test ordering plugins.
+
+---
+
+## 📊 Reports
+
+After execution, an HTML report is generated:
+
+* **Location:** `/target/cucumber-reports/Cucumber.html`
+* **Includes:** Passed/failed steps, scenarios, tags, execution time, and screenshots (if configured).
+
+---
